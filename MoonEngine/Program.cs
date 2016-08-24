@@ -10,7 +10,8 @@ namespace MoonEngine
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("");
+            Console.WriteLine("Aloha! ");
+            Console.ReadKey();
         }
     }
 }
