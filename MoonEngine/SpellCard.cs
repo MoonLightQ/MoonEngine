@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace MoonEngine
 {
-    /// <summary>
-    /// 实体是游戏中发生互动的基本单位。
-    /// </summary>
-    public abstract class Entity
+    class SpellCard
     {
     }
 }
