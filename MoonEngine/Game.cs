@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace MoonEngine
 {
-    class MinionCard
+    class Game
     {
+        public Game()
+        {
+
+        }
+
+        public bool GameStart()
+        {
+            return false;
+        }
     }
 }

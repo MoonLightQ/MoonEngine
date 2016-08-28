@@ -9,18 +9,24 @@ namespace MoonEngine
 {
     class Field
     {
-        ArrayList entityList = new ArrayList();
-
+        public ArrayList entityList = new ArrayList();
+        public void Add(object o)
+        {
+            entityList.Add(o);
+        }
         public void Shuffle() {
             bool[] assigned = new bool[entityList.Count];
             ArrayList newEntityList = new ArrayList();
             Random sourceGen = new Random();
             int flag = 0;
+            for (int i = 0; i < entityList.Count; i++)
+                assigned[i] = false;
             for (int i = 0; i < entityList.Count; i++) {
                 int step = sourceGen.Next(entityList.Count);
                 for (int j = 0; j < step; j++)
-                    while (!assigned[flag])
+                    do
                         flag = (flag + 1) % entityList.Count;
+                    while (assigned[flag]);
                 assigned[flag] = true;
                 newEntityList.Add(entityList[flag]);
             }
