@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MoonEngine
 {
-    class Card
+    class Card:Entity
     {
         public readonly UInt32 ID;
         public readonly string Name;
