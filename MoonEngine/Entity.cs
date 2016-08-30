@@ -11,5 +11,9 @@ namespace MoonEngine
     /// </summary>
     public abstract class Entity
     {
+        public override string ToString()
+        {
+            return base.ToString();
+        }
     }
 }
